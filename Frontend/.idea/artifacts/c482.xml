@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="c482">
+    <output-path>$PROJECT_DIR$/out/artifacts/c482</output-path>
+    <root id="archive" name="c482.jar">
+      <element id="archive" name="c482.jar">
+        <element id="module-output" name="c482" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="dir-copy" path="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/view" />
+      </element>
+    </root>
+  </artifact>
+</component>

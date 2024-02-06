@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="rootVBox" prefHeight="395.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.t8d.capstone.frontend.controller.AddPartFormController">
+    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+        <Label text="Add Part">
+            <font>
+              <Font name="System Bold" size="16.0"/>
+            </font>
+            <opaqueInsets>
+              <Insets/>
+            </opaqueInsets>
+            <padding>
+              <Insets left="50.0" right="50.0"/>
+            </padding>
+        </Label>
+        <RadioButton fx:id="inHouseRadioBtn" mnemonicParsing="false" selected="true" text="In-House">
+            <toggleGroup>
+              <ToggleGroup fx:id="viewToggleGroup"/>
+            </toggleGroup>
+            <HBox.margin>
+              <Insets right="10.0"/>
+            </HBox.margin>
+        </RadioButton>
+        <RadioButton fx:id="outsourcedRadioBtn" mnemonicParsing="false" text="Outsourced" toggleGroup="$viewToggleGroup">
+            <HBox.margin>
+              <Insets right="5.0"/>
+            </HBox.margin>
+        </RadioButton>
+    </HBox>
+    <StackPane prefHeight="263.0" prefWidth="490.0">
+        <VBox.margin>
+            <Insets left="40.0" right="40.0"/>
+        </VBox.margin>
+        <GridPane fx:id="inHouseGridPane" prefHeight="272.0" prefWidth="490.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <StackPane.margin>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+            </StackPane.margin>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID"/>
+            <TextField alignment="CENTER" disable="true" editable="false" promptText="Auto Gen - Disabled"
+                       GridPane.columnIndex="1"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" GridPane.rowIndex="1"/>
+            <TextField fx:id="inHousePartName" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory Level" GridPane.rowIndex="2"/>
+            <TextField fx:id="inHouseInvLevel" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Price/Cost" GridPane.rowIndex="3"/>
+            <TextField fx:id="inHousePrice" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Max" GridPane.rowIndex="4"/>
+            <TextField fx:id="inHouseMax" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Min" textAlignment="CENTER" GridPane.columnIndex="2"
+                  GridPane.rowIndex="4">
+                <GridPane.margin>
+                    <Insets left="10.0"/>
+                </GridPane.margin>
+            </Text>
+            <TextField fx:id="inHouseMin" alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Machine ID" textAlignment="CENTER"
+                  GridPane.rowIndex="5"/>
+            <TextField fx:id="inHouseMachineID" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+        </GridPane>
+        <GridPane fx:id="outsourcedGridPane" disable="true" prefHeight="272.0" prefWidth="490.0" visible="false">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <StackPane.margin>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+            </StackPane.margin>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID"/>
+            <TextField alignment="CENTER" disable="true" editable="false" promptText="Auto Gen - Disabled"
+                       GridPane.columnIndex="1"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" GridPane.rowIndex="1"/>
+            <TextField fx:id="outsourcedName" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory Level" GridPane.rowIndex="2"/>
+            <TextField fx:id="outsourcedInvLevel" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Price/Cost" GridPane.rowIndex="3"/>
+            <TextField fx:id="outsourcedPrice" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Max" GridPane.rowIndex="4"/>
+            <TextField fx:id="outsourcedMax" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Min" textAlignment="CENTER" GridPane.columnIndex="2"
+                  GridPane.rowIndex="4">
+                <GridPane.margin>
+                    <Insets left="10.0"/>
+                </GridPane.margin>
+            </Text>
+            <TextField fx:id="outsourcedMin" alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4"/>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Company Name" textAlignment="CENTER"
+                  GridPane.rowIndex="5"/>
+            <TextField fx:id="outsourcedCompanyName" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+        </GridPane>
+    </StackPane>
+    <Pane prefHeight="54.0" prefWidth="570.0">
+        <Button fx:id="saveBtn" layoutX="398.0" layoutY="10.0" mnemonicParsing="false" onAction="#saveBtnOnClick"
+                text="Save"/>
+        <Button fx:id="cancelBtn" layoutX="469.0" layoutY="10.0" mnemonicParsing="false" onAction="#cancelBtnOnClick"
+                text="Cancel"/>
+    </Pane>
+</VBox>

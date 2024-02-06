@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:controller="me.t8d.capstone.frontend.controller.MainFormController" fx:id="rootVBox" prefHeight="513.0" prefWidth="858.0"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <Label alignment="CENTER" style="&#10;" text="Inventory Management System" textAlignment="CENTER" wrapText="false">
+        <font>
+          <Font size="18.0" fx:id="x12"/>
+        </font>
+        <textFill>
+          <Color red="0.624" green="0.624" blue="0.624" fx:id="x22"/>
+        </textFill>
+        <VBox.margin>
+          <Insets left="15.0"/>
+        </VBox.margin>
+    </Label>
+    <HBox prefHeight="441.0" prefWidth="858.0">
+        <AnchorPane prefHeight="575.0" prefWidth="461.0"
+                    style="-fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 15;">
+            <HBox.margin>
+                <Insets left="5.0" right="5.0"/>
+            </HBox.margin>
+            <padding>
+                <Insets right="10.0"/>
+            </padding>
+            <Label alignment="CENTER" layoutX="28.0" layoutY="15.0" style="&#10;" text="Parts"
+                   textAlignment="CENTER">
+                <font>
+                    <Font size="18.0" fx:id="x1"/>
+                </font>
+                <textFill>
+                    <Color red="0.624" green="0.624" blue="0.624" fx:id="x2"/>
+                </textFill>
+            </Label>
+            <TableView fx:id="PartsTable" layoutX="24.0" layoutY="52.0" prefHeight="337.0" prefWidth="393.0">
+                <columns>
+                    <TableColumn fx:id="PartIDCol" prefWidth="75.0" text="Part ID"/>
+                    <TableColumn fx:id="PartNameCol" prefWidth="75.0" text="Part Name"/>
+                    <TableColumn fx:id="PartInvLevelCol" prefWidth="94.34031677246094" text="Inventory Level"/>
+                    <TableColumn fx:id="PartCPUCol" prefWidth="132.28607177734375" text="Price/Cost per Unit"/>
+                </columns>
+            </TableView>
+            <TextField fx:id="PartSearchInput" layoutX="238.0" layoutY="13.0" promptText="Search by Part ID or Name"/>
+            <Button fx:id="PartsAddBtn" onAction="#addPartButtonClick" layoutX="243.0" layoutY="399.0" mnemonicParsing="false" text="Add"/>
+            <Button fx:id="PartsModBtn" onAction="#modifyPart" layoutX="291.0" layoutY="399.0" mnemonicParsing="false" text="Modify"/>
+            <Button fx:id="PartsDelBtn" onAction="#deletePart" layoutX="357.0" layoutY="399.0" mnemonicParsing="false" text="Delete"/>
+        </AnchorPane>
+        <AnchorPane prefHeight="575.0" prefWidth="461.0"
+                    style="-fx-border-color: black; -fx-border-width: 1; -fx-border-radius: 15;">
+            <children>
+                <Label alignment="CENTER" layoutX="33.0" layoutY="15.0" style="&#10;" text="Products"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" fx:id="x11"/>
+                    </font>
+                    <textFill>
+                        <Color red="0.624" green="0.624" blue="0.624" fx:id="x21"/>
+                    </textFill>
+                </Label>
+                <TableView fx:id="ProductsTable" layoutX="21.0" layoutY="57.0" prefHeight="337.0" prefWidth="393.0">
+                    <columns>
+                        <TableColumn fx:id="ProductIDCol" prefWidth="75.0" text="Product ID"/>
+                        <TableColumn fx:id="ProductNameCol" prefWidth="97.966552734375" text="Product Name"/>
+                        <TableColumn fx:id="ProductInvLevelCol" prefWidth="93.7578125" text="Inventory Level"/>
+                        <TableColumn fx:id="ProductCPUCol" prefWidth="110.7421875" text="Price/Cost per Unit"/>
+                    </columns>
+                </TableView>
+                <TextField fx:id="ProductSearchInput" layoutX="216.0" layoutY="13.0" prefHeight="26.0" prefWidth="182.0"
+                           promptText="Search by Product ID or Name"/>
+                <Button fx:id="ProductsAddBtn" onAction="#addProduct" layoutX="241.0" layoutY="399.0" mnemonicParsing="false" text="Add"/>
+                <Button fx:id="ProductModBtn" onAction="#modifyProduct" layoutX="291.0" layoutY="399.0" mnemonicParsing="false" text="Modify"/>
+                <Button fx:id="ProductDelBtn" onAction="#deleteProduct" layoutX="357.0" layoutY="399.0" mnemonicParsing="false" text="Delete"/>
+                <Button fx:id="ProductPriceReportBtn" onAction="#reportOnProductPrice" layoutX="21.0" layoutY="399.0" mnemonicParsing="false" text="Generate Price Report"/>
+            </children>
+            <HBox.margin>
+                <Insets left="5.0" right="5.0"/>
+            </HBox.margin>
+            <padding>
+                <Insets right="10.0"/>
+            </padding>
+        </AnchorPane>
+    </HBox>
+    <Pane prefHeight="52.0" prefWidth="858.0">
+        <Button fx:id="invReportBtn" onAction="#handleInventoryReportButtonClick" layoutX="10.0" layoutY="11.0"
+                mnemonicParsing="false" text="Generate Inventory Report"/>
+        <Button fx:id="exitButton" onAction="#handleExitButtonClick" layoutX="856.0" layoutY="11.0"
+                mnemonicParsing="false" text="Exit"/>
+    </Pane>
+</VBox>

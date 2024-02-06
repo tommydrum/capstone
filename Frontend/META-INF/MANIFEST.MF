@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: me.t8d.capstone.frontend.MainApp
+Class-Path: me.t8d.c482.c482
+

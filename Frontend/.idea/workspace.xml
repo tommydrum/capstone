@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73ef19fc-5393-41a8-ab4b-d064d90b4bcc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/inventory_level_20240202_141418.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_prices_20240202_141417.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/utils/ObservableListDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/view/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/MainApp.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/MainApp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/class-use/MainApp.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/class-use/MainApp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/AddPartFormController.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/AddPartFormController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/AddProductFormController.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/AddProductFormController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/MainFormController.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/MainFormController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/ModifyPartFormController.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/ModifyPartFormController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/ModifyProductFormController.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/ModifyProductFormController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/class-use/AddPartFormController.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/class-use/AddPartFormController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/class-use/AddProductFormController.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/class-use/AddProductFormController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/class-use/MainFormController.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/class-use/MainFormController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/class-use/ModifyPartFormController.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/class-use/ModifyPartFormController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/class-use/ModifyProductFormController.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/controller/class-use/ModifyProductFormController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/InHouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/InHouse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/Inventory.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/Inventory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/Outsourced.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/Outsourced.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/Part.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/Part.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/Product.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/Product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/class-use/InHouse.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/class-use/InHouse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/class-use/Inventory.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/class-use/Inventory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/class-use/Outsourced.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/class-use/Outsourced.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/class-use/Part.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/class-use/Part.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/class-use/Product.html" beforeDir="false" afterPath="$PROJECT_DIR$/apidocs/me.t8d.c482.c482/me/t8d/c482/c482/model/class-use/Product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/controller/AddPartFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/controller/AddPartFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/controller/AddProductFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/controller/AddProductFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/controller/MainFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/controller/MainFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/controller/ModifyPartFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/controller/ModifyPartFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/controller/ModifyProductFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/controller/ModifyProductFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/model/InHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/model/InHouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/model/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/model/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/model/Outsourced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/model/Outsourced.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/model/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/model/Part.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/view/AddPartForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/view/AddPartForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/view/AddProductForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/view/AddProductForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/view/MainForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/view/MainForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/view/ModifyPartForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/view/ModifyPartForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/view/ModifyProductForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/view/ModifyProductForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2WHKpPVEsJd8IEejCac8GpFEW4M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven.c482 [clean,install,javafx:run].executor": "Run",
+    "Maven.capstoneFrontend [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/var/home/t8d/IdeaProjects/C195 - Java 2",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/controller" />
+      <recent name="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/me/t8d/c482/c482/view" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="c482 [clean,install,javafx:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+                <option value="javafx:run" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-e1d2075fd9a7-d4e022e8" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73ef19fc-5393-41a8-ab4b-d064d90b4bcc" name="Changes" comment="" />
+      <created>1696384248171</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696384248171</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
