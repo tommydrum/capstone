@@ -17,10 +17,17 @@ import java.util.List;
 import java.util.Map;
 
 public class GetParts implements RequestHandler<Map<String, Object>, ApiGatewayResponse>  {
+    private DB db;
+    public GetParts() {
+        db = new DB();
+    }
+    public GetParts(DB db) {
+        this.db = db;
+    }
 
     @Override
     public ApiGatewayResponse handleRequest(Map<String, Object> stringObjectMap, Context context) {
-        DB db = new DB();
+//        DB db = new DB();
         List<Part> parts = new ArrayList<>();
         try {
             Statement statement = db.getStmt();

@@ -334,7 +334,8 @@ public class MainFormController {
      */
     public void initialize() {
         setWindowDisabled();
-        this.inv = new Inventory();
+        if (this.inv == null)
+            this.inv = new Inventory();
         PartsTable.setItems(inv.getAllParts());
         PartIDCol.setCellValueFactory(new PropertyValueFactory<>("id"));
         PartNameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -510,5 +511,19 @@ public class MainFormController {
         alert.showAndWait();
 
         setWindowEnabled();
+    }
+
+    /**
+     * Constructor for the MainFormController, which takes an Inventory object. This is only for unit testing purposes.
+     * @param inventory for the inventory to be used for this window.
+     */
+    public MainFormController(Inventory inventory) {
+        this.inv = inventory;
+    }
+    /**
+     * Default constructor for the MainFormController.
+     */
+    public MainFormController() {
+
     }
 }

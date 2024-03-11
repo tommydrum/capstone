@@ -12,9 +12,16 @@ import java.sql.ResultSet;
 import java.util.Map;
 
 public class GetProducts implements RequestHandler<Map<String, Object>, ApiGatewayResponse> {
+    private DB db;
+    public GetProducts() {
+        db = new DB();
+    }
+    public GetProducts(DB db) {
+        this.db = db;
+    }
     @Override
     public ApiGatewayResponse handleRequest(Map<String, Object> stringObjectMap, Context context) {
-        DB db = new DB();
+//        DB db = new DB();
         Inventory inventory = new Inventory();
         try {
             db.getStmt().execute("SELECT * FROM Products");

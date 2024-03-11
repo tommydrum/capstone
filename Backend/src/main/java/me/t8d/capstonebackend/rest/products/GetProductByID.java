@@ -15,10 +15,17 @@ import java.util.List;
 import java.util.Map;
 
 public class GetProductByID implements RequestHandler<Map<String, Object>, ApiGatewayResponse> {
+    private DB db;
+    public GetProductByID() {
+        db = new DB();
+    }
+    public GetProductByID(DB db) {
+        this.db = db;
+    }
 
     @Override
     public ApiGatewayResponse handleRequest(Map<String, Object> stringObjectMap, Context context) {
-        DB db = new DB();
+//        DB db = new DB();
         // SQLi regex, not foolproof but because of the server-client nature, it will catch most scenarios.
         System.out.println(stringObjectMap);
         System.out.println(context);

@@ -11,9 +11,16 @@ import java.sql.ResultSet;
 import java.util.Map;
 
 public class AddProduct implements RequestHandler<Map<String, Object>, ApiGatewayResponse> {
+    private DB db;
+    public AddProduct() {
+        db = new DB();
+    }
+    public AddProduct(DB db) {
+        this.db = db;
+    }
     @Override
     public ApiGatewayResponse handleRequest(Map<String, Object> stringObjectMap, Context context) {
-        DB db = new DB();
+//        DB db = new DB();
         // SQLi regex, not foolproof but because of the server-client nature, it will catch most scenarios.
         String regex = ".*[;\\\\].*";
         if (stringObjectMap.get("body").toString().matches(regex)) {

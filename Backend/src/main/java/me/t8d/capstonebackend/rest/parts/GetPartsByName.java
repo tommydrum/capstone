@@ -14,9 +14,16 @@ import java.sql.Statement;
 import java.util.Map;
 
 public class GetPartsByName implements RequestHandler<Map<String, Object>, ApiGatewayResponse> {
+    private DB db;
+    public GetPartsByName() {
+        db = new DB();
+    }
+    public GetPartsByName(DB db) {
+        this.db = db;
+    }
     @Override
     public ApiGatewayResponse handleRequest(Map<String, Object> stringObjectMap, Context context) {
-        DB db = new DB();
+//        DB db = new DB();
         // SQLi regex, not foolproof but because of the server-client nature, it will catch most scenarios.
         String regex = ".*[;\\\\].*";
         if (stringObjectMap.get("pathParameters").toString().matches(regex)) {

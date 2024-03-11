@@ -14,6 +14,13 @@ import java.sql.Statement;
 import java.util.Map;
 
 public class UpdateProduct implements RequestHandler<Map<String, Object>, ApiGatewayResponse> {
+    private DB db;
+    public UpdateProduct() {
+        db = new DB();
+    }
+    public UpdateProduct(DB db) {
+        this.db = db;
+    }
     @Override
     public ApiGatewayResponse handleRequest(Map<String, Object> stringObjectMap, Context context) {
         // Retrieve product fields from request body, as well as associatedParts into an array
@@ -53,7 +60,7 @@ public class UpdateProduct implements RequestHandler<Map<String, Object>, ApiGat
         // Retrieve associatedParts from request body
         // Clear the productParts table for this product
         try {
-            Statement statement = new DB().getStmt();
+            Statement statement = db.getStmt();
             statement.execute("DELETE FROM ProductParts WHERE productId = " + id);
         } catch (SQLException e) {
             return ApiGatewayResponse.builder()
@@ -70,7 +77,7 @@ public class UpdateProduct implements RequestHandler<Map<String, Object>, ApiGat
                     // update this part in the productparts table
                     try {
                         // Then add the new associatedPart to the productParts table
-                        new DB().getStmt().execute("INSERT INTO ProductParts (productId, partId) VALUES (" + id + ", " + partId + ")");
+                        db.getStmt().execute("INSERT INTO ProductParts (productId, partId) VALUES (" + id + ", " + partId + ")");
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                         e.printStackTrace();
@@ -91,7 +98,7 @@ public class UpdateProduct implements RequestHandler<Map<String, Object>, ApiGat
         }
         // Update the product in the database
         try {
-            Statement statement = new DB().getStmt();
+            Statement statement = db.getStmt();
             statement.execute("UPDATE Products SET name = '" + name + "', price = " + price + ", stock = " + stock + ", min = " + min + ", max = " + max + " WHERE id = " + id);
         } catch (SQLException e) {
             return ApiGatewayResponse.builder()
