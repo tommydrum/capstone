@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73ef19fc-5393-41a8-ab4b-d064d90b4bcc" name="Changes" comment="" />
+    <list default="true" id="73ef19fc-5393-41a8-ab4b-d064d90b4bcc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/ApiGatewayResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/ApiGatewayResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/PingHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/GetInventory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/parts/AddPart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/parts/AddPart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/parts/DeletePart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/parts/DeletePart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/parts/GetPartByID.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/parts/GetPartByID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/parts/GetParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/parts/GetParts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/parts/GetPartsByName.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/parts/GetPartsByName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/parts/UpdatePart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/parts/UpdatePart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/products/AddProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/products/AddProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/products/DeleteProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/products/DeleteProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/products/GetProductByID.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/products/GetProductByID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/products/GetProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/products/GetProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/products/GetProductsByName.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/products/GetProductsByName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/products/UpdateProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/me/t8d/capstonebackend/rest/products/UpdateProduct.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +39,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="MainFormControllerTest.testAddPart" />
+    </enabled-run-configurations>
+  </component>
   <component name="MavenRunner">
     <option name="delegateBuildToMaven" value="true" />
   </component>
@@ -34,26 +58,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "JUnit.MainFormControllerTest.executor": "Run",
-    "JUnit.MainFormControllerTest.testInitialize.executor": "Run",
-    "Maven.c482 [clean,install,javafx:run].executor": "Run",
-    "Maven.capstoneFrontend [install].executor": "Run",
-    "Maven.capstoneFrontend [test].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/var/home/t8d/IdeaProjects/C195 - Java 2",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;JUnit.MainFormControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainFormControllerTest.testAddPart.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainFormControllerTest.testInitialize.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.c482 [clean,install,javafx:run].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.capstoneFrontend [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.capstoneFrontend [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/var/home/t8d/IdeaProjects/C195 - Java 2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/me/t8d/capstone/frontend/controller" />
@@ -68,7 +93,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainFormControllerTest.testInitialize">
+  <component name="RunManager" selected="Maven.c482 [clean,install,javafx:run]">
     <configuration name="MainFormControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="c482" />
       <extension name="coverage">
@@ -80,6 +105,22 @@
       <option name="PACKAGE_NAME" value="me.t8d.capstone.frontend.controller" />
       <option name="MAIN_CLASS_NAME" value="me.t8d.capstone.frontend.controller.MainFormControllerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainFormControllerTest.testAddPart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="c482" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.t8d.capstone.frontend.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.t8d.capstone.frontend.controller" />
+      <option name="MAIN_CLASS_NAME" value="me.t8d.capstone.frontend.controller.MainFormControllerTest" />
+      <option name="METHOD_NAME" value="testAddPart" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,6 +176,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MainFormControllerTest.testInitialize" />
+        <item itemvalue="JUnit.MainFormControllerTest.testAddPart" />
         <item itemvalue="JUnit.MainFormControllerTest" />
       </list>
     </recent_temporary>

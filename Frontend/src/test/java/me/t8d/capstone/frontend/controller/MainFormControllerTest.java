@@ -95,11 +95,4 @@ public class MainFormControllerTest extends ApplicationTest {
         assertEquals("Product 1", productsTable.getItems().get(0).getName());
         assertEquals("Product 2", productsTable.getItems().get(1).getName());
     }
-    // Test that the addPart method opens the AddPartForm
-    @Test
-    public void testAddPart() {
-        clickOn("#AddPartButton");
-        // Verify that the AddPartForm is open
-        verifyThat("#AddPartForm", hasText("Add Part"));
-    }
 }

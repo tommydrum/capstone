@@ -178,9 +178,10 @@ public class LoginController {
      * Sets the locale and the window text language according to the system's locale.
      */
     public void setLocale() {
-        locale = Locale.getDefault();
-        // Location in - Country (Timezone)
-        locationValue.setText(locale.getDisplayCountry() + " (" + ZoneId.systemDefault() + ")");
+        TimeZone tz = TimeZone.getDefault();
+        String zone = tz.getDisplayName(false, TimeZone.LONG);
+        locationValue.setText(zone + " (" + ZoneId.systemDefault() + ")");
+
         usernameText.setText("Username");
         passwordText.setText("Password");
         loginBtn.setText("Login");
