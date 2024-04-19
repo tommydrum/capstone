@@ -12,15 +12,31 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Map;
-
+/**
+ * Serverless function to get all products from the database by name
+ * @author Thomas Miller
+ */
 public class GetProductsByName implements RequestHandler<Map<String, Object>, ApiGatewayResponse> {
     private DB db;
+    /**
+     * Default constructor to setup the database
+     */
     public GetProductsByName() {
         db = new DB();
     }
+    /**
+     * Constructor with a database, used for testing purposes
+     * @param db the database to use, allows a mock db
+     */
     public GetProductsByName(DB db) {
         this.db = db;
     }
+    /**
+     * Handle the request to get matching products from the database by name
+     * @param stringObjectMap the request body containing the name of the product to get
+     * @param context the context of the request
+     * @return the response to the request, including the status code and body, containing matching products and their associated parts
+     */
     @Override
     public ApiGatewayResponse handleRequest(Map<String, Object> stringObjectMap, Context context) {
 //        DB db = new DB();

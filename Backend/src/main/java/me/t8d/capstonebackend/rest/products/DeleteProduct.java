@@ -6,15 +6,32 @@ import me.t8d.capstonebackend.ApiGatewayResponse;
 import me.t8d.capstonebackend.DB;
 
 import java.util.Map;
+/**
+ * Serverless function to delete a product from the database
+ * @author Thomas Miller
+ */
 
 public class DeleteProduct implements RequestHandler<Map<String, Object>, ApiGatewayResponse> {
     private DB db;
+    /**
+     * Default constructor to setup the database
+     */
     public DeleteProduct() {
         db = new DB();
     }
+    /**
+     * Constructor with a database, used for testing purposes
+     * @param db the database to use, allows a mock db
+     */
     public DeleteProduct(DB db) {
         this.db = db;
     }
+    /**
+     * Handle the request to delete a product from the database
+     * @param stringObjectMap the request object map containing the id of the product to delete
+     * @param context the context of the request
+     * @return the response to the request, including the status code and body
+     */
     @Override
     public ApiGatewayResponse handleRequest(Map<String, Object> stringObjectMap, Context context) {
 //        DB db = new DB();

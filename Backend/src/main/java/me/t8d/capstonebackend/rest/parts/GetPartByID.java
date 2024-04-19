@@ -16,14 +16,32 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Serverless function to get a part from the database by ID
+ * @author Thomas Miller
+ */
+
 public class GetPartByID implements RequestHandler<Map<String, Object>, ApiGatewayResponse> {
     private DB db;
+    /**
+     * Default constructor to setup the database
+     */
     public GetPartByID() {
         db = new DB();
     }
+    /**
+     * Constructor with a database, used for testing purposes
+     * @param db the database to use, allows a mock db
+     */
     public GetPartByID(DB db) {
         this.db = db;
     }
+    /**
+     * Handle the request to get a part from the database by ID
+     * @param stringObjectMap the request body containing the id of the part to get
+     * @param context the context of the request
+     * @return the response to the request, including the status code and body
+     */
     @Override
     public ApiGatewayResponse handleRequest(Map<String, Object> stringObjectMap, Context context) {
 //        DB db = new DB();

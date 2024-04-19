@@ -1,1 +1,1 @@
-moduleSearchIndex = [{"l":"me.t8d.c482.c482"}];updateSearchResults();
+moduleSearchIndex = [{"l":"me.t8d.capstone.frontend"}];updateSearchResults();

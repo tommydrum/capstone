@@ -9,15 +9,32 @@ import me.t8d.capstonebackend.DB;
 
 import java.sql.ResultSet;
 import java.util.Map;
+/**
+ * Serverless function to add a product to the database
+ * @author Thomas Miller
+ */
 
 public class AddProduct implements RequestHandler<Map<String, Object>, ApiGatewayResponse> {
     private DB db;
+    /**
+     * Default constructor to setup the database
+     */
     public AddProduct() {
         db = new DB();
     }
+    /**
+     * Constructor with a database, used for testing purposes
+     * @param db the database to use, allows a mock db
+     */
     public AddProduct(DB db) {
         this.db = db;
     }
+    /**
+     * Handle the request to add a product to the database
+     * @param stringObjectMap the request body, including the product to add
+     * @param context the context of the request
+     * @return the response to the request, including the status code and body
+     */
     @Override
     public ApiGatewayResponse handleRequest(Map<String, Object> stringObjectMap, Context context) {
 //        DB db = new DB();

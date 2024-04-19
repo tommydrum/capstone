@@ -12,15 +12,31 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Map;
-
+/**
+ * Serverless function to update a product in the database
+ * @author Thomas Miller
+ */
 public class UpdateProduct implements RequestHandler<Map<String, Object>, ApiGatewayResponse> {
     private DB db;
+    /**
+     * Default constructor to setup the database
+     */
     public UpdateProduct() {
         db = new DB();
     }
+    /**
+     * Constructor with a database, used for testing purposes
+     * @param db the database to use, allows a mock db
+     */
     public UpdateProduct(DB db) {
         this.db = db;
     }
+    /**
+     * Handle the request to update a product in the database
+     * @param stringObjectMap the request body containing the product to update
+     * @param context the context of the request
+     * @return the response to the request, including the status code and body
+     */
     @Override
     public ApiGatewayResponse handleRequest(Map<String, Object> stringObjectMap, Context context) {
         // Retrieve product fields from request body, as well as associatedParts into an array

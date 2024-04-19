@@ -11,6 +11,10 @@ import org.apache.logging.log4j.Logger;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * API Gateway Lambda Proxy Response Default Implementation (as given by serverless documentation)
+ */
+
 public class ApiGatewayResponse {
 
 	private final int statusCode;
